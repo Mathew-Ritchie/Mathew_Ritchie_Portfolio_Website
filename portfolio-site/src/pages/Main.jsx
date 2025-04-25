@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "../Components/Header.jsx";
 import Intro from "../Components/Intro.jsx";
@@ -23,8 +22,11 @@ export default function MainPage() {
     <div>
       <Header onToggleModal={toggleModal} />
       <NavModal isModalVisible={isModalVisible} onHideModal={hideModal} />
+      <div className="spacer" id="intro-spacer"></div>
       <Intro id="intro-div" />
+      <div className="about-spacer" id="about-spacer"></div>
       <AboutMe id="about-me-div" />
+      <div className="project-spacer" id="project-spacer"></div>
       <Projects id="my-projects-div" />
       <Footer id="contact-div" />
     </div>

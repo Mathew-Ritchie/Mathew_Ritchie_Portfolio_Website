@@ -1,72 +1,66 @@
 import React from "react";
 
 import "./projects.css";
-
+import { v4 as createId } from "uuid";
 import JSL from "../assets/JSL-pic.png";
 import SDF from "../assets/SDF-pic.png";
+import DJS from "../assets/DJS.png";
 
 export default function Projects() {
+  const projects = [
+    {
+      img: SDF,
+      alt: "screenshot of Bank Landing Page",
+      title: "Bank Landing Page",
+      subTitle: "HTML & CSS",
+    },
+    {
+      img: JSL,
+      alt: "screenshot of Agile Board App",
+      title: "Agile Board App",
+      subTitle: "JavaScript",
+    },
+    {
+      img: DJS,
+      alt: "screenshot of Podcast App",
+      title: "Podcast App",
+      subTitle: "JavaScript, React, Css",
+    },
+  ];
+
   return (
     <section className="my-projects-div" id="my-projects-div">
       <div className="project-spacer" id="project-spacer"></div>
       <div>
         <h1 className="projects-title">Projects</h1>
         <div id="project-imgs-div">
-          <div className="project-img-wrapper">
-            <a
-              href="https://github.com/Mathew-Ritchie/SDF_Portfolio_Piece_MATRIT24048_FTO1024_B_Mathew-Ritchie_SDF11"
-              target="_blank"
-            >
-              <div className="container">
-                <img
-                  src={SDF}
-                  alt="portfolio piece screen shot"
-                  className="image"
-                  // style="width: 100%"
-                />
-                <div className="middle">
-                  <div className="text">Click to see my repo</div>
-                </div>
+          {projects.map((project) => (
+            <div key={createId()} className="project-img-wrapper">
+              <div className="image-boarder">
+                <a
+                  href="https://github.com/Mathew-Ritchie/SDF_Portfolio_Piece_MATRIT24048_FTO1024_B_Mathew-Ritchie_SDF11"
+                  target="_blank"
+                >
+                  <div className="container">
+                    <img
+                      src={project.img}
+                      alt={project.alt}
+                      className="image"
+                      // style="width: 100%"
+                    />
+                    <div className="middle">
+                      <div className="text">Click to see More</div>
+                    </div>
+                  </div>
+                </a>
               </div>
-            </a>
-            <p>
-              <strong>Bank landing page</strong> <br />
-              <br />
-              HTML and CSS project
-              <br />
-              <br />
-              This project was my first portfolio assignment at Codespace. It Showcases the use of
-              HTML and CSS with the Tailwind framework.
-            </p>
-          </div>
-          <div className="project-img-wrapper">
-            <a
-              href="https://github.com/Mathew-Ritchie/JSL_Portfolio_Piece_MATRIT24048_FTO2410_B_Mathew--Ritchie_JSL11"
-              target="_blank"
-            >
-              <div className="container">
-                <img
-                  src={JSL}
-                  alt="portfolio piece screen shot"
-                  className="image"
-                  // style="width: 100%"
-                />
-                <div className="middle">
-                  <div className="text">Click to see my repo</div>
-                </div>
-              </div>
-            </a>
-            <p>
-              <strong>Agile board app</strong> <br />
-              <br />
-              JavaScript project
-              <br />
-              <br />
-              This project was my second portfolio assignment at Codespace. It Showcases the use of
-              vanilla Javascript to manipulate the DOM, import data and store in on localstorage,
-              and edit and delete tasks from the local storage.
-            </p>
-          </div>
+              <p className="project-title-sub">
+                <strong>{project.title}</strong> <br />
+                <br />
+                {project.subTitle}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

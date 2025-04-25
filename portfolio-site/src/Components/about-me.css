@@ -1,5 +1,5 @@
 .about-spacer {
-  height: 95px;
+  height: 0px;
 }
 
 .about-me-div {
@@ -10,6 +10,7 @@
   background-color: var(--clt-dark);
   min-height: fit-content;
   color: #fff;
+  height: 100vh;
 }
 
 .about-me-grid {
@@ -54,7 +55,7 @@
 
   .about-me-img {
     grid-area: img;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
   }
 
   .about-me-p {
