@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-import codingLogoDark from "../assets/coding-logo-dark.png";
+import mathewLogo from "../assets/mathewLogo.png";
 
 export default function Header({ onToggleModal }) {
   return (
@@ -8,7 +8,7 @@ export default function Header({ onToggleModal }) {
       <div className="header-div">
         <img
           className="header-img"
-          src={codingLogoDark}
+          src={mathewLogo}
           alt="logo showing computer outline with coding tags on the screen."
         />
         <button className="header-nav-btn" id="header-nav-btn" onClick={onToggleModal}>

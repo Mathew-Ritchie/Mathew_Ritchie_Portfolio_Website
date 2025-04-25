@@ -4,6 +4,10 @@
 
 .intro-section {
   width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-div {
@@ -12,7 +16,7 @@
   justify-content: center;
   align-items: start;
   gap: 10px;
-  padding: 80px 30px 0px 30px;
+  padding: 0px 30px 0px 30px;
 }
 
 .intro-img {
@@ -59,15 +63,16 @@ strong {
       "img title2"
       "img subtitle";
     grid-template-columns: min-content max-content;
+    grid-template-rows: 180px 50px 200px;
   }
 
-  .intro-img {
+  /* .intro-img {
     grid-area: img;
-    min-width: 250px;
+    max-width: 400px;
     position: relative;
     z-index: 2;
     border-radius: 10px;
-  }
+  } */
 
   .intro-title {
     font-size: xx-large;
@@ -91,5 +96,59 @@ strong {
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .intro-img {
+    grid-area: img;
+    max-width: 250px;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+  }
+  .intro-div {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title1"
+      "img title2"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+    grid-template-rows: 100px 50px 200px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .intro-img {
+    grid-area: img;
+    max-width: 300px;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+  }
+  .intro-div {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title1"
+      "img title2"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+    grid-template-rows: 140px 50px 200px;
+  }
+}
+
+@media (min-width: 900px) {
+  .intro-img {
+    grid-area: img;
+    max-width: 400px;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
   }
 }
