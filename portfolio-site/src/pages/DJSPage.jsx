@@ -1,5 +1,17 @@
 import React from "react";
 
+const imageModules = import.meta.glob("../assets/DJS/*", { eager: true });
+const imageList = Object.values(imageModules).map((module) => module.default);
+
 export default function DJSPage() {
-  return <h1>DJS</h1>;
+  return (
+    <div>
+      <h1>SDF</h1>
+      <div>
+        {imageList.map((image, index) => (
+          <img key={index} src={image} alt={`SDF Image ${index + 1}`} />
+        ))}
+      </div>
+    </div>
+  );
 }

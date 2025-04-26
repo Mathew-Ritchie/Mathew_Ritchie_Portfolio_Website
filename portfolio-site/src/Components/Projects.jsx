@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "./projects.css";
 import { v4 as createId } from "uuid";
 import JSL from "../assets/JSL-pic.png";
@@ -13,18 +13,21 @@ export default function Projects() {
       alt: "screenshot of Bank Landing Page",
       title: "Bank Landing Page",
       subTitle: "HTML & CSS",
+      to: "/SDF",
     },
     {
       img: JSL,
       alt: "screenshot of Agile Board App",
       title: "Agile Board App",
       subTitle: "JavaScript",
+      to: "/JSL",
     },
     {
       img: DJS,
       alt: "screenshot of Podcast App",
       title: "Podcast App",
       subTitle: "JavaScript, React, Css",
+      to: "/DJS",
     },
   ];
 
@@ -37,10 +40,7 @@ export default function Projects() {
           {projects.map((project) => (
             <div key={createId()} className="project-img-wrapper">
               <div className="image-boarder">
-                <a
-                  href="https://github.com/Mathew-Ritchie/SDF_Portfolio_Piece_MATRIT24048_FTO1024_B_Mathew-Ritchie_SDF11"
-                  target="_blank"
-                >
+                <Link to={project.to}>
                   <div className="container">
                     <img
                       src={project.img}
@@ -52,7 +52,7 @@ export default function Projects() {
                       <div className="text">Click to see More</div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
               <p className="project-title-sub">
                 <strong>{project.title}</strong> <br />
