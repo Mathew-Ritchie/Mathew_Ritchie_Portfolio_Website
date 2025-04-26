@@ -1,15 +1,23 @@
 import React from "react";
-import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import MainPage from "./pages/Main.jsx";
+import DJSPage from "./pages/DJSPage.jsx";
+import JSLPage from "./pages/JSLPage.jsx";
+import SDFPage from "./pages/SDFPage.jsx";
 
 import "./App.css";
 
 function App() {
   return (
-    <>
-      <MainPage />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/SDF" element={<SDFPage />} />
+        <Route path="/JSL" element={<JSLPage />} />
+        <Route path="/DJS" element={<DJSPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
