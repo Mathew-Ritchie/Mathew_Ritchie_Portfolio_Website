@@ -1,0 +1,43 @@
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clt-dark: #303030;
+  --clr-accent: #ffae03;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+.ind-project-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--clt-dark);
+  padding: 40px;
+}
+
+.ind-project-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 175px;
+  background-color: var(--clr-light);
+  border-radius: 10px;
+}
+
+.ind-project-img {
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+}
