@@ -11,7 +11,7 @@ export default function Projects() {
     {
       img: SDF,
       alt: "screenshot of Bank Landing Page",
-      title: "Bank Landing Page",
+      title: "Cache Bank Landing Page",
       subTitle: "HTML & CSS",
       to: "/SDF",
     },
