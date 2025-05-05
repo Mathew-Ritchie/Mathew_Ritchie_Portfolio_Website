@@ -14,16 +14,16 @@ export default function AboutMe() {
           alt="Picture of Mathew Ritchie on a boat and table mountian in the background"
         />
         <p className="about-me-p">
-          I live in Hout Bay, Cape Town. I am relatively new to the web developemnt world but
-          already love it.
+          I live in Cape Town, and I am relatively new to the web developemnt world, but I already
+          love it!
           <br />
-          <br />I really enjoy being creative, and solving problems, but most of all I love to
-          build, which makes web development perfect for me. I am currently studying at CodeSpace,
-          where I am building a foundation in HTML, CSS and JavaScript. This has included working
-          with CSS frameworks like Tailwind and JavaScript frame works like REACT.
+          <br />I have just finished my Software Development course at CodeSpace Academy, which has
+          given me a great foundation for what it hopefully to come. I have a good understanding of
+          HTML, CSS and most impotantly JavaScript and React.
           <br />
-          <br />I am hoping to start a new and Exciting career in the Web Developemt world. I am
-          looking for opportunities to learn, grow, and hopefully contribute to something exciting.
+          <br />I am hoping to start a new and exciting career in the Web Developemt world. I love
+          being creative and problem solving, while creating new things. I am looking for
+          opportunities to learn, grow, and hopefully contribute to something exciting.
         </p>
       </div>
     </section>

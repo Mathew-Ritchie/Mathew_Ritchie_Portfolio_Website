@@ -2,7 +2,6 @@
   width: 100vw;
   /* border: 2px solid red; */
   background-color: var(--clt-dark);
-
   height: 60px;
 }
 
@@ -10,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   /* padding: 0px 20px; */
   margin-right: 20px;
   height: 60px;
@@ -39,4 +39,15 @@
 
 .projects-header-nav-btn:hover {
   box-shadow: 2px 4px 10px var(--clr-light);
+}
+
+@media (max-width: 469px) {
+  .projects-header-div {
+    justify-content: center;
+    height: 100px;
+  }
+  .projects-header-container {
+    height: 105px;
+    box-shadow: 2px 2px 2px var(--clr-light);
+  }
 }

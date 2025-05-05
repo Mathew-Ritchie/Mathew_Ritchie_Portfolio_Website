@@ -11,6 +11,12 @@
   height: 100vh;
 }
 
+.projects-title {
+  font-size: xx-large;
+  text-align: center;
+  padding-top: 30px;
+}
+
 .my-projects-div {
   display: flex;
   flex-direction: column;
@@ -119,5 +125,17 @@
 
   .project-img {
     min-width: 400px;
+  }
+}
+
+@media (max-width: 470px) {
+  .project-img-wrapper {
+    width: 350px;
+  }
+  .image {
+    width: 350px;
+  }
+  .container {
+    width: 350px;
   }
 }
