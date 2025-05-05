@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./individual-show-pages.css";
 const imageModules = import.meta.glob("../assets/JSL/*", { eager: true });
 const imageList = Object.values(imageModules).map((module) => module.default);
 
 export default function JSLPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="project-body">
       <h1 className="individual-project-title">SDF</h1>

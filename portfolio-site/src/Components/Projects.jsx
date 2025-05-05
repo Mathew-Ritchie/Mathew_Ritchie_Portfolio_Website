@@ -13,21 +13,21 @@ export default function Projects() {
       alt: "screenshot of Bank Landing Page",
       title: "Cache Bank Landing Page",
       subTitle: "HTML & CSS",
-      to: "/SDF",
+      to: "/project/SDF",
     },
     {
       img: JSL,
       alt: "screenshot of Agile Board App",
       title: "Agile Board App",
       subTitle: "JavaScript",
-      to: "/JSL",
+      to: "/project/JSL",
     },
     {
       img: DJS,
       alt: "screenshot of Podcast App",
       title: "Podcast App",
       subTitle: "JavaScript, React, Css",
-      to: "/DJS",
+      to: "/project/DJS",
     },
   ];
 

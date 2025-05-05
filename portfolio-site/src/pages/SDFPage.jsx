@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./individual-show-pages.css";
 
 const imageModules = import.meta.glob("../assets/SDF/*", { eager: true });
 const imageList = Object.values(imageModules).map((module) => module.default);
 
 export default function SDFPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="project-body">
       <h1 className="individual-project-title">Cache Bank Landing page</h1>

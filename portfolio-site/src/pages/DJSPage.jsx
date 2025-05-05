@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./individual-show-pages.css";
 const imageModules = import.meta.glob("../assets/DJS/*", { eager: true });
 const imageList = Object.values(imageModules).map((module) => module.default);
 
 export default function DJSPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="project-body">
       <h1 className="individual-project-title">The Best Ever Podcast web App</h1>
