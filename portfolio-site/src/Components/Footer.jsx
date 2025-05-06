@@ -31,7 +31,7 @@ export default function Footer() {
               <i className="fa-brands fa-linkedin"></i>
             </a>
           </li>
-          <li className="social-list__item">
+          {/* <li className="social-list__item">
             <a
               className="social-list__link"
               href="https://codepen.io/Mathew-Ritchie"
@@ -39,7 +39,7 @@ export default function Footer() {
             >
               <i className="fa-brands fa-codepen"></i>
             </a>
-          </li>
+          </li> */}
           <li className="social-list__item">
             <a
               className="social-list__link"
